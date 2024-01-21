@@ -1,4 +1,3 @@
-import javax.sound.sampled.Line;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -7,7 +6,6 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
-
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
@@ -81,7 +79,17 @@ public class PowerRenamerGUI extends JFrame{
         buttonPanel.setLayout(new GridLayout(1,2));
 
             //Buttons--------------------------------------------------
-                
+                //Delete Button----------------------------------------
+                    delButton.addActionListener(e ->{
+                        System.out.println("hello");
+                    });
+                //------------------------------------------------------
+
+                //RenameButton------------------------------------------
+                renButton.addActionListener(e ->{
+                    System.out.println("world");
+                });
+                //------------------------------------------------------
             //---------------------------------------------------------
 
         buttonPanel.add(delButton);
